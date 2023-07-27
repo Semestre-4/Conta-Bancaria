@@ -10,7 +10,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Conta" target="19" />
       <module name="Conta-Bancaria" target="19" />
     </bytecodeTargetLevel>
   </component>
