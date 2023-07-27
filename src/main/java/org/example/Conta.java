@@ -8,13 +8,14 @@ public class Conta {
 
     private BigDecimal saldo;
 
-    private void resgate() {
-
+    private void resgate(BigDecimal valor) {
+        saldo = saldo.subtract(valor);
     }
 
-    private void deposito(){
+        private void deposito(BigDecimal valor) {
+            saldo = saldo.add(valor);
+        }
 
-    }
 
     private void consultarSaldo(){
 
