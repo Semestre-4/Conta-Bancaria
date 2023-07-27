@@ -47,9 +47,18 @@ public class Conta {
         }
     }
 
-    // Método para calcular o lucro do investimento
-    private BigDecimal calcularLucroInvestimentoCiclo() {
-        return saldoInvestimento.multiply(BigDecimal.valueOf(0.05)) ; // 5% de lucro no valor investido
+    // Método para calcular o lucro do investimento no ciclo atual
+    public BigDecimal calcularLucroInvestimentoCiclo() {
+        BigDecimal lucro = saldoInvestimento.multiply(new BigDecimal("0.05")); // 5% de lucro no valor investido
+        return lucro;
     }
+
+    // Método para finalizar o ciclo de investimento e receber o lucro
+    public void finalizarCicloInvestimento() {
+        BigDecimal lucroCiclo = calcularLucroInvestimentoCiclo();
+        saldoInvestimento = saldoInvestimento.add(lucroCiclo);
+        System.out.println("Ciclo de investimento finalizado. Lucro do ciclo: " + lucroCiclo + " unidades");
+    }
+
 
 }
