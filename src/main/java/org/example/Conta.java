@@ -1,14 +1,24 @@
 package org.example;
 
+import java.math.BigDecimal;
+
 public class Conta {
 
     private String nome;
 
-    private void resgate() {}
+    private BigDecimal saldo;
 
-    private void deposito(){}
+    private void resgate() {
 
-    private void consultarSaldo(){}
+    }
+
+    private void deposito(){
+
+    }
+
+    private void consultarSaldo(){
+
+    }
 
     public String getNome() {
         return nome;
@@ -18,4 +28,11 @@ public class Conta {
         this.nome = nome;
     }
 
+    public BigDecimal getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(BigDecimal saldo) {
+        this.saldo = BigDecimal.valueOf(100);
+    }
 }
