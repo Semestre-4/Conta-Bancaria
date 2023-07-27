@@ -14,6 +14,7 @@ public class Conta {
 
     public void resgate(BigDecimal valor) {
         saldo = saldo.subtract(valor);
+        System.out.println(saldo);
     }
 
     public void deposito(BigDecimal valor) {
