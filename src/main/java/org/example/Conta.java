@@ -7,7 +7,7 @@ public class Conta {
     private String nome;
     private BigDecimal saldo;
 
-    public Conta(String nome) {
+    public Conta() {
         this.nome = nome;
         this.saldo = BigDecimal.valueOf(100); // Instanciar com 100 unidades
     }
