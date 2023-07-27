@@ -12,14 +12,14 @@ public class Conta {
         saldo = saldo.subtract(valor);
     }
 
-        private void deposito(BigDecimal valor) {
-            saldo = saldo.add(valor);
-        }
-
-
-    private void consultarSaldo(){
-
+    private void deposito(BigDecimal valor) {
+        saldo = saldo.add(valor);
     }
+
+    private BigDecimal consultarSaldo() {
+        return saldo;
+    }
+
 
     public String getNome() {
         return nome;
